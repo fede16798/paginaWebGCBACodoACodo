@@ -1,0 +1,119 @@
+body{
+    font-family: Arial;
+    background: -webkit-radial-gradient(top, #ccedc0 , #b65d69);
+                                            /*  /*black , white*/
+}
+.centrado{
+    margin: 0 auto;
+    padding: 0 1em;   
+}
+
+@media screen and (min-width: 52em){
+    .centrado{
+        max-width: 52em;
+    }
+}
+
+header{
+    height: 5em;
+    margin-bottom: 1em; /* espacio entre el header y el body*/
+
+}
+
+.menu-section{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a{
+    font-family: Verdana, Tahoma, sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: .6em 1em;
+    font-size: 1.3em;
+}
+
+.menu-simple ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-simple li{
+    flex: 1 0 auto;
+    text-align: center;
+}
+footer{
+    width: 52em;
+    height: 5em;
+    background-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+#texto_footer{
+    padding-top: 2em;
+}
+
+#contenidoPrincipal{
+    width: 52em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.8em;
+}
+
+/*--------------------- Fin de header y footer ----------------*/
+
+/* ------------- seccion contacto ---------------*/
+.contenedor_contacto{
+    background: #999;
+    width: 38em;
+    margin-left: 7.5em; 
+    margin-bottom: 2.5em;
+    padding: 0%;
+    border-radius: 1em;
+}
+.formulario{
+    width: 36em;
+    padding: 1em;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.caja-1{
+	width: 34em;
+    height: 2em;
+    margin: 1em 1em;
+    font-size: 16px;
+    font-weight: bold;
+    border-style: none;
+    background-color: #999;
+    color: white;
+}
+.caja-2{
+	width: 34em;
+    height: 6em;
+	margin: 1em 1em;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-style: none;
+    background: #999;
+}
+.correr{
+	margin: 0em 1em;
+    padding: 0.8em;
+    border-radius: 1em;
+}
+.formu-titulo{
+	margin: 0em 8em 1em;
+    color: whitesmoke;
+}

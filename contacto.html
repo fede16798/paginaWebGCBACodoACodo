@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactStyle.css">
+    <title>Contacto</title>
+</head>
+<body class="centrado">
+    <header class="regular-progression">
+        <section class="menu-section">
+            <nav class="menu-simple menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="vsBoca.html">vs Boca</a></li>
+                    <li><a href="titulos.html">Títulos</a></li>
+                    <li><a href="curiosidades.html">Curiosidades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <hr/>
+        </section>
+    
+    </header>
+    <section class="contenidoPrincipal"> 
+        <div class="contenedor_contacto">
+        <div class="formulario">
+            <h3 class="formu-titulo">Envianos tus comentarios</h3>
+            <form actions="enviar.php" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre" class="caja-1"> <hr>
+                <input type="Email" name="email" placeholder="E-mail" class="caja-1" required> <hr>
+                <input type="tel" name="telefono" placeholder="Telefono" class="caja-1" required> <hr>
+                <input type="text" name="asunto" placeholder="Asunto" class="caja-1"> <hr>
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Comentarios" class="caja-2"></textarea>
+                <button type="submit" class="correr"> Enviar </button>
+            </form>
+        </div>
+    </div>
+    </section>
+    <footer class="centrado">
+        <p id="texto_footer">By Federico Amico - 2020</p>
+    </footer>
+</body>
+</html>

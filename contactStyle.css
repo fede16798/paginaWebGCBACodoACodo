@@ -113,6 +113,11 @@ footer{
     padding: 0.8em;
     border-radius: 1em;
 }
+
+.correr:hover{
+    opacity: 0.7;
+}
+
 .formu-titulo{
 	margin: 0em 8em 1em;
     color: whitesmoke;

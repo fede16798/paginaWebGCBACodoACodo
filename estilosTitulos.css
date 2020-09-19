@@ -1,5 +1,5 @@
 body{
-    font-family: Arial;
+    font-family: sans-serif;
     background: -webkit-radial-gradient(top, #ccedc0 , #b65d69);
                                             /*  /*black , white*/
 }
@@ -17,7 +17,6 @@ body{
 header{
     height: 5em;
     margin-bottom: 1em; /* espacio entre el header y el body*/
-
 }
 
 .menu-section{
@@ -38,6 +37,10 @@ header{
     color: white;
     padding: .6em 1em;
     font-size: 1.3em;
+}
+
+.menu li a:hover{
+    opacity: 0.5;
 }
 
 .menu-simple ul{
@@ -86,4 +89,8 @@ footer{
 
 .card-img-top{
     height: 12rem;
+}
+
+img:hover{
+    opacity: 0.8;
 }

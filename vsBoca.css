@@ -1,20 +1,23 @@
-
-body{
-    padding: 0;
-    margin: 0;
-    font-family: Arial;
-    background: -webkit-radial-gradient(top, #ccedc0 , #b65d69);
-                                            /*  /*black , white*/
-}
-.centrado{
-    margin: 0 auto;
-    padding: 0 1em;   
+* {
+    box-sizing: border-box;
 }
 
-@media screen and (min-width: 52em){
-    .centrado{
-        max-width: 55em;
-    }
+body {
+    background: #181818;
+    color: whitesmoke;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
+
+/*-------------- FOOTER Y HEADER ---------*/
+
+header ul li a:hover,
+header ul li a:focus {
+    background: rgba(214, 48, 49, 0.2);
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
 }
 
 header{
@@ -53,17 +56,10 @@ header{
     text-align: center;
 }
 
-.menu-simple li a:hover{
-    text-decoration-line: underline;
-}
-
-/*
 footer{
-    width: 52em;
-    height: 5em;
+    height: 5rem;
+    margin-top: 1rem;
     background-color: #000000;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
     color: white;
     text-align: center;
@@ -71,93 +67,11 @@ footer{
 
 #texto_footer{
     padding-top: 2em;
-}*/
-
-
-/*--------------------- Fin de header y footer ----------------*/   
-.btn-matchs{
-    width: 100%;
-    background-color: #fa8072;
-    border-style: none;
-    font-size: 1.5rem;
 }
 
+/* ------------- FIN DE HEADER Y FOOTER -------------- */
 
-.matchs{
-    height: 2rem;
-    padding: 0;
-    margin-bottom: 0.5rem;
-}
-
-.list-matchs{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-}
-
-.list-matchs li {
-    font-size: 1rem;
-}
-
-
-.container div{   
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    height: auto;
-    width: 55rem;
-    height: auto;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-}
-
-.container h3{
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.text{
-    background: #a12525;
-    color: #fff;
-    max-width: 26rem;
-    height: 18rem;
-    margin: 0;
-    padding: 0.3em;
-    border-radius: 0.5rem;
-}
-
-.text h3{
-    color: #ffffff;
-    font-family: serif;
-    margin-bottom: 0;
-}
-
-.text p{
-    line-height: 100%;
-    padding: 0;
-}
-
-.formaciones {
-    font-size: 12px;
-} 
-
-.text a {
-    color: white;
-    font-size: 12px;
-}
-
-.text ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* -------------------------------------------------------*/
-
+/* -------------- BUTTON PARTIDOS ---------------------*/
 
 .nav-area {
     margin-bottom: 1rem;
@@ -204,7 +118,7 @@ footer{
 }
 
 .nav-area .dropdown li > a{
-    background-color: #262626   ;
+    background-color: #262626;
     color: #fff;
 }
 
@@ -216,4 +130,73 @@ footer{
 .nav-area .dropdown > a:after{
     content: '+';
     padding-left: 15px;
+}
+
+/*------------------------ BUTTON PARTIDOS ------------------- */
+
+/*---------------------- CONTAINER DE CAJAS ---------------- */
+.container div{   
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: auto;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.container h3{
+    text-align: center;
+}
+
+.text{
+    background: #a12525;
+    color: #fff;
+    max-width: 45%;
+    margin: 0;
+    padding: 0.3em;
+    border-radius: 0.5rem;
+}
+
+.text h3{
+    color: #ffffff;
+}
+
+.text p{
+    line-height: 100%;
+}
+
+.formaciones {
+    font-size: 12px;
+} 
+
+.text a {
+    color: white;
+    font-size: 13px;
+}
+
+.text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*-------- FIN DE CONTAINER DE PARTIDOS --------------- */
+
+/* ---------------- LARGE SIZE -------------------- */
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
 }

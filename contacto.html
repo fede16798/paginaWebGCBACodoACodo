@@ -22,21 +22,32 @@
         </section>
     
     </header>
-    <section class="contenidoPrincipal"> 
-        <div class="contenedor_contacto">
-        <div class="formulario">
-            <h3 class="formu-titulo">Envianos tus comentarios</h3>
-            <form actions="enviar.php" method="POST">
-                <input type="text" name="nombre" placeholder="Nombre" class="caja-1"> <hr>
-                <input type="Email" name="email" placeholder="E-mail" class="caja-1" required> <hr>
-                <input type="tel" name="telefono" placeholder="Telefono" class="caja-1" required> <hr>
-                <input type="text" name="asunto" placeholder="Asunto" class="caja-1"> <hr>
-                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Comentarios" class="caja-2"></textarea>
-                <button type="submit" class="correr"> Enviar </button>
-            </form>
-        </div>
+
+    <div class="container">
+        <section class="s1">
+            <div class="anim"> 
+                Animacion
+            </div>  
+        </section>
+        <section class="s2"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26268.057989495082!2d-58.4622398293307!3d-34.616619680720525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1600645193242!5m2!1sen!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+        <section class="s3">
+            <div class="contenedor_contacto">
+                <div class="formulario">
+                    <h3 class="formu-titulo">Enviame tus comentarios</h3>
+                    <form actions="enviar.php" method="POST">
+                        <input type="text" name="nombre" placeholder="Nombre" class="caja-1"> <hr>
+                        <input type="Email" name="email" placeholder="E-mail" class="caja-1" required> <hr>
+                        <input type="tel" name="telefono" placeholder="Telefono" class="caja-1" required> <hr>
+                        <input type="text" name="asunto" placeholder="Asunto" class="caja-1"> <hr>
+                        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Comentarios" class="caja-2"></textarea>
+                        <button type="submit" class="correr"> Enviar </button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </div>
-    </section>
     <footer class="centrado">
         <p id="texto_footer">By Federico Amico - 2020</p>
     </footer>

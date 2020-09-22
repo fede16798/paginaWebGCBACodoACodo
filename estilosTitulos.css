@@ -1,17 +1,23 @@
-body{
-    font-family: sans-serif;
-    background: -webkit-radial-gradient(top, #ccedc0 , #b65d69);
-                                            /*  /*black , white*/
-}
-.centrado{
-    margin: 0 auto;
-    padding: 0 1em;   
+* {
+    box-sizing: border-box;
 }
 
-@media screen and (min-width: 52em){
-    .centrado{
-        max-width: 52em;
-    }
+body {
+    background: #181818;
+    color: whitesmoke;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
+
+/*-------------- FOOTER Y HEADER ---------*/
+
+header ul li a:hover,
+header ul li a:focus {
+    background: rgba(214, 48, 49, 0.2);
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
 }
 
 header{
@@ -39,10 +45,6 @@ header{
     font-size: 1.3em;
 }
 
-.menu li a:hover{
-    opacity: 0.5;
-}
-
 .menu-simple ul{
     display: flex;
     flex-wrap: wrap;
@@ -53,12 +55,11 @@ header{
     flex: 1 0 auto;
     text-align: center;
 }
+
 footer{
-    width: 52em;
-    height: 5em;
+    height: 5rem;
+    margin-top: 1rem;
     background-color: #000000;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
     color: white;
     text-align: center;
@@ -68,29 +69,88 @@ footer{
     padding-top: 2em;
 }
 
-#contenidoPrincipal{
-    width: 52em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0.8em;
-}
-/*---------- fin de header y footer ---------------*/
+/* ------------- FIN DE HEADER Y FOOTER -------------- */
 
+/* --------------- BODY -------------------*/
 
 .grupo2{
     display: flex;
     justify-content: space-around;
+    flex-wrap: nowrap;
 }
 
 .card{
-    margin: 0.25em;
-    width: 17rem;
+    margin: 1rem 1.5rem ;
+    color: black;
 }
 
 .card-img-top{
-    height: 12rem;
+    height: 15rem;
 }
 
 img:hover{
     opacity: 0.8;
+}
+
+.carta {
+    width: 20rem;
+}
+
+.carta2{
+    width: 18.54rem;
+}
+
+/* -------------- FIN BODY -------------------*/
+
+/* --------------- SIZE MEDIUM ------------- */
+
+@media(max-width: 1024px) { 
+    .grupo2{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        margin: 1rem 1rem ;
+        color: black;
+    }
+
+    .carta {
+        width: 17rem;
+    }
+
+    .carta2{
+        width: 17rem;
+    }
+}
+
+/* --------------- SIZE SMALL ------------- */
+@media(max-width: 750px) { 
+    body {
+        line-height: 1;
+        padding: 0 1em;
+    }
+    
+    /*-------------- FOOTER Y HEADER ---------*/
+    
+    header{
+        height: 4rem;
+    }
+    
+    .menu li a{
+        padding: .2rem .6rem;
+        font-size: 1rem;
+    }
+    
+    footer{
+        height: 3rem;
+        margin-top: .5rem;
+    }
+    
+    #texto_footer{
+        padding-top: 1rem;
+    }
+    
+    /* ------------- FIN DE HEADER Y FOOTER -------------- */
 }

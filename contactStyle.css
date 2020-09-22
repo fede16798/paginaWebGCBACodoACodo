@@ -70,14 +70,6 @@ footer{
 }
 
 /* ------------- FIN DE HEADER Y FOOTER -------------- */
-
-.container {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
-}
-
 ul {
     list-style: none;
     padding: 0;

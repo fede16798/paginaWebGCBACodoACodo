@@ -163,6 +163,7 @@ footer{
 
 .text p{
     line-height: 100%;
+    font-size: 15px;
 }
 
 .formaciones {
@@ -171,7 +172,7 @@ footer{
 
 .text a {
     color: white;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .text ul {
@@ -182,21 +183,4 @@ footer{
 
 /*-------- FIN DE CONTAINER DE PARTIDOS --------------- */
 
-/* ---------------- LARGE SIZE -------------------- */
-@media(min-width: 700px) {
-    body {
-        padding: 0 4em;
-    }
-    .contact-wrapper {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .contact-wrapper > * {
-        padding: 2em;
-    }
-    .contact-info h4,
-    .contact-info ul,
-    .contact-info p {
-        text-align: left;
-    }
-}
+/* ---------------- MEDIUM SIZE -------------------- */

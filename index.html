@@ -3,36 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilos.css" media="all">
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="prueba.css" media="all">
     <title>MiPagina</title>
 </head>
-<body class="centrado">
-<header class="regular-progression">
-    <section class="menu-section">
-        <nav class="menu-simple menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="vsBoca.html">vs Boca</a></li>
-                <li><a href="titulos.html">Títulos</a></li>
-                <li><a href="curiosidades.html">Curiosidades</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <hr/>
-    </section>
-</header>
-    <section id="contenidoPrincipal">
-        <div class="contenedor">
+<body>
+    <header class="regular-progression">
+        <section class="menu-section">
+            <nav class="menu-simple menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="vsBoca.html">vs Boca</a></li>
+                    <li><a href="titulos.html">Títulos</a></li>
+                    <li><a href="curiosidades.html">Curiosidades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <hr/>
+        </section>
+    </header>
+    <section class="container">
+        <div class="contenedor clase1">
             <h1> Gallardo </h1>
             <p> Gallardo nació el 21 de enero de 1976 en Merlo, Buenos Aires. Con inferiores hechas en River, Marcelo tendría su ansiado debut el 18 de Abril de 1993 contra Newells. A partir de acá, empieza la exítosa carrera del actual técnico de River. 
                 El muñeco tuvo una trayectoria marcada por lesiones que le impidieron desplegar al completo su habilidad. </p>
         </div>
-        <div class="contenedor">
+        <div class="contenedor clase2">
             <h1> Titulos como jugador </h1>
             <p> Como jugador cosechó 15 títulos, incluyendo la seleccion sub-23. En cada équipo donde tuvo participación, logró conseguir una medalla para sumar vitrina.</p>
             <ul>
                 <h4>En river <i>8 titulos</i></h4>
-                <ul class="titulos_internacionales">
+                <ul class="titulos_internacionales list_size_small">
                     <li>Torneo Apertura 1993</li>
                     <li>Torneo Apertura 1994</li>
                     <li>Torneo Apertura 1996</li>
@@ -52,7 +58,7 @@
                 <li> <strong>Argentina sub-23</strong>: <i>1 titulo - Juegos Panamericanos 1995</i></li>
             </ul>
         </div>
-        <div class="contenedor">
+        <div class="contenedor clase3">
             <h1> Titulos como entrenador</h1>
             <p> Su carrera como entrenador comenzó Junio del 2011 al frente de Nacional de Uruguay. Estaría al frente del equipo charrúa por 2 años.
                 Su llegada a River se daría el 6 de Junio del 2014, luego de la salida de Ramón Díaz, Gallardo debía agarrar al equipo campeón del fútbol argentino y en un margen de incertidumbre por la salida repentina del Riojano. 
@@ -62,6 +68,7 @@
            
             <ul class="titulos_internacionales">
                 <li> <strong>En Nacional</br></br></strong><i>Campeonato Uruguayo 2011</i></li>
+            </br>
                 <ul id="lista_centrada">
                     <li><strong> En River</strong></br></br></li>
                     <li><i>Copa Argentina 2016 - 2017 - 2019</i></li>
@@ -69,19 +76,21 @@
                 </ul>
             </ul>
             <h4>Titulos Internacionales en River </h4>
-            <ul class="titulos_internacionales">
+            <ul class="titulos_internacionales list_size_small">
                 <li><i>Copa Sudamericana 2014</i></li>
                 <li><i>Recopa sudamericana 2015</i></li>
                 <li><i>Copa Libertadores 2015</i></li>
-                <li><i>Suruga Bank <br>2015</i></li>
+                <li><i>Suruga Bank 2015</i></li>
                 <li><i>Recopa Sudamericana 2016</i></li>
                 <li><i>Copa Libertadores 2018</i></li>
                 <li><i>Recopa Sudamericana 2019</i></li>
-
             </ul>
         </div>
+        <aside class="right_image clase4">
+            <img src="images/banner_gallardo.jpg" alt="banner_gallardo">
+        </aside>
     </section>  
-<footer class="centrado">
+<footer>
     <p id="texto_footer">By Federico Amico - 2020</p>
 </footer>
 </body>

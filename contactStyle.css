@@ -10,6 +10,10 @@ body {
     padding: 0 1.5em;
 }
 
+hr {
+    border-top: 1px solid white;
+}
+
 /*-------------- FOOTER Y HEADER ---------*/
 
 header ul li a:hover,
@@ -144,16 +148,65 @@ ul {
 /* CONTACT INFO */
 .contact-info {
     background: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .contact-info h4, .contact-info ul, .contact-info p {
-    text-align: center;
-    margin: 0 0 1rem 0;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.contact-info ul{
+    grid-column: 1/2;
+}
+
+.contact-info p{
+    grid-column: 2/3;
+}
+
+.mapa{
+    display: grid;
+    grid-column: 3/4;
+}
+
+/* SMALL SIZE */
+@media(max-width: 1000px) {
+    /* CONTACT INFO */
+    .contact-info {
+        background: #000;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .contact-info h4, .contact-info ul, .contact-info p {
+        margin: 0.5rem 0 1rem 0;
+    }
+
+    .contact-info ul{
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+
+    .contact-info p{
+        grid-row: 1/2;
+        grid-column: 2/4;   
+        margin-left: 1rem;
+    }
+
+    .mapa{
+        grid-row: 2/3;
+        grid-column: 1/4;
+        padding-left: 1.5rem;
+    }
+
+    .mapa iframe {
+        width: 450px;
+    }
 }
 
 
 /* LARGE SIZE */
-@media(min-width: 700px) {
+@media(min-width: 1200px) {
     body {
         padding: 0 4em;
     }
@@ -164,9 +217,36 @@ ul {
     .contact-wrapper > * {
         padding: 2em;
     }
-    .contact-info h4,
-    .contact-info ul,
-    .contact-info p {
-        text-align: left;
+    /* CONTACT INFO */
+    .contact-info {
+        background: #000;
+        display: grid;
+        grid-template-rows: .5fr 1.5fr 1.5fr;
+        grid-template-columns: 0;
+    }
+
+    .contact-info h4, .contact-info ul, .contact-info p {
+        margin: none;
+    }
+
+    .contact-info ul{
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+
+    .contact-info p{
+        grid-row: 2/2;
+        grid-column: 1/4;   
+        margin-left: 0;
+    }
+
+    .mapa{
+        grid-row: 3/4;
+        grid-column: 1/4;
+        padding-left: .5rem;
+    }
+
+    .mapa iframe {
+        width: 400px;
     }
 }

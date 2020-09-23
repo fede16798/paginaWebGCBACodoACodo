@@ -10,6 +10,10 @@ body {
     padding: 0 1.5em;
 }
 
+hr {
+    border-top: 1px solid white;
+}
+
 /*-------------- FOOTER Y HEADER ---------*/
 
 header ul li a:hover,
@@ -143,7 +147,7 @@ footer{
 }
 
 
-/*--------------- LARGE SIZE --------------  */
+/*------------------------------ MEDIUM SIZE -------------------------------------  */
 @media(max-width: 1024px) {   
     
 .menu-section{
@@ -228,7 +232,7 @@ footer{
     
 }
 
-/* ------- MEDIUM SIZE ------ */
+/* ------------------------------------------ SMALL SIZE --------------------------------------------- */
 @media(max-width: 750px) {
     
     body {
@@ -281,7 +285,11 @@ footer{
         display: none;
     }
     /*-------- TARJETAS DEL BODY --------*/
-    
+    body div ul li {
+        font-size: 0.8rem;
+    }
+
+
     .contenedor{
         margin-bottom: 0.5rem;
         padding: 0.5rem;

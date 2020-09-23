@@ -10,6 +10,10 @@ body {
     padding: 0 1.5em;
 }
 
+hr {
+    border-top: 1px solid white;
+}
+
 /*-------------- FOOTER Y HEADER ---------*/
 
 header ul li a:hover,
@@ -183,4 +187,59 @@ footer{
 
 /*-------- FIN DE CONTAINER DE PARTIDOS --------------- */
 
-/* ---------------- MEDIUM SIZE -------------------- */
+/* -------------------------------- SMALL SIZE ------------------------------------ */
+@media(max-width: 768px) {
+
+    body {
+        line-height: 1;
+        padding: 0 1rem;
+    }
+    
+    /*-------------- FOOTER Y HEADER ---------*/
+    header{
+        height: 4rem;
+        margin-bottom: 1em; /* espacio entre el header y el body*/
+    }
+    
+    .menu-section{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    
+    .menu li a{
+        padding: .3em .5em;
+        font-size: 1rem;
+    }
+        
+    footer{
+        height: 4rem;
+    }
+    
+    #texto_footer{
+        padding-top: 1.5rem;
+    }
+    
+    /* ------------- FIN DE HEADER Y FOOTER -------------- */
+    /*---------------------- CONTAINER DE CAJAS ---------------- */
+    .container div{
+        flex-direction: column;
+    }
+    
+    .text{
+        max-width: 100%;
+    }
+    .text p{
+        font-size: 14px;
+    }
+    
+    .formaciones {
+        font-size: 11px;
+    } 
+    
+    .text a {
+        font-size: 14px;
+    }
+        /*-------- FIN DE CONTAINER DE PARTIDOS --------------- */
+}
+

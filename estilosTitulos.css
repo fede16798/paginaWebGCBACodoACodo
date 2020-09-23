@@ -10,6 +10,10 @@ body {
     padding: 0 1.5em;
 }
 
+hr {
+    border: 1px solid white;
+}   
+
 /*-------------- FOOTER Y HEADER ---------*/
 
 header ul li a:hover,

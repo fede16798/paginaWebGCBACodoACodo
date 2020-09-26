@@ -16,6 +16,7 @@ hr {
 
 /*-------------- FOOTER Y HEADER ---------*/
 
+
 header ul li a:hover,
 header ul li a:focus {
     background: rgba(214, 48, 49, 0.2);
@@ -76,9 +77,24 @@ footer{
 /* ------------- FIN DE HEADER Y FOOTER -------------- */
 
 /* -------------- BUTTON PARTIDOS ---------------------*/
+.menu-fixed{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    right: 0;    
+}
 
 .nav-area {
     margin-bottom: 1rem;
+    -webkit-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all 2s ease;
+}
+
+.nav-area:hover{
+    visibility: 3s;
 }
 
 .nav-area ul{

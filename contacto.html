@@ -10,6 +10,7 @@
     <!-- ANIMATE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="contactStyle.css">
+    <link rel="php" href="enviar.php">
     <title>Contacto</title>
 </head>
 <body>
@@ -34,42 +35,42 @@
 
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
-                <h3>Contact us</h3>
-                <form action="">
+                <h3>Contactame</h3>
+                <form actions="enviar.php" method="POST">
                     <p>
-                        <label>FullName</label>
-                        <input type="text" name="fullname">
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" required>
                     </p>
                     <p>
-                        <label>Email Adress</label>
-                        <input type="email" name="email">
+                        <label>Email</label>
+                        <input type="email" name="email" required>
                     </p>
                     <p>
-                        <label>Phone Number</label>
-                        <input type="tel" name="phone">
+                        <label>Numero</label>
+                        <input type="tel" name="telefono">
                     </p>
                     <p>
-                        <label>Affair</label>
-                        <input type="text" name="affair">
+                        <label>Asunto</label>
+                        <input type="text" name="asunto" required>
                     </p>
                     <p class="block">
-                       <label>Message</label> 
-                        <textarea name="message" rows="3"></textarea>
+                       <label>Mensaje</label> 
+                        <textarea name="mensaje" rows="3"></textarea>
                     </p>
                     <p class="block">
-                        <button>
-                            Send
+                        <button type="submit" class="correr">
+                            Enviar
                         </button>
                     </p>
                 </form>
             </div>
             <div class="contact-info">
                 <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Baker Street</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Direccion</li>
                     <li><i class="fas fa-phone"></i> (111) 111 111 111</li>
-                    <li><i class="fas fa-envelope-open-text"></i> contact@website.com</li>
+                    <li><i class="fas fa-envelope-open-text"></i> fede.amico98@gmail.com</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+                <p>Pagina hecha con Grid, Flexbox y Bootstrap</p>
                 <div class="mapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26268.057989495082!2d-58.4622398293307!3d-34.616619680720525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1600714156761!5m2!1sen!2sar" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>

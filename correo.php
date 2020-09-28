@@ -3,7 +3,6 @@
 
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
-    $telefono = $_POST['telefono'];
     $asunto = $_POST['asunto'];
     $mensaje = $_POST['mensaje'];
 
@@ -12,5 +11,5 @@
 
     mail($destinatario, $asunto, $mensajeCompleto, $header);
     echo "<script> alert('correo enviado exitosamente');</script>";
-    header("Location:contacto.html");
+    header("Location:curiosidades.html");
 ?>

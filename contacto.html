@@ -36,7 +36,7 @@
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
                 <h3>Contactame</h3>
-                <form actions="correo.php" method="POST">
+                <form action="enviar.php" method="POST">
                     <p>
                         <label>Nombre</label>
                         <input type="text" name="nombre" id="" required>
@@ -51,7 +51,7 @@
                     </p>
                     <p class="block">
                         <label>Mensaje</label> 
-                        <textarea name="mensaje" rows="3"></textarea>
+                        <textarea name="mensaje" rows="3" required></textarea>
                     </p>
                     <p class="block">
                         <button type="submit" class="correr"> Enviar </button>
